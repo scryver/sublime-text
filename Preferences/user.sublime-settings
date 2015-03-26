@@ -1,0 +1,12 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+    "translate_tabs_to_spaces": true,
+    "ensure_newline_at_eof_on_save": true,
+    "default_line_ending": "unix",
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_with_fields": true,
+    "auto_complete_cycle": true,
+    "trim_trailing_white_space_on_save": true
+}
+

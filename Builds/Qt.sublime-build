@@ -1,0 +1,48 @@
+{
+	"shell_cmd": "cd $project_path; qmake && make",
+
+	"osx": {
+		"shell_cmd": "cd $project_path; ./makeitmac"
+	},
+	"windows": {
+		"shell_cmd": "cd $project_path; qmake && nmake"
+	},
+
+	"variants":
+	[
+		{
+			"name": "run",
+			"shell_cmd": ["cd $project_path/../builds/unix/debug/LS1-Remote_debug"],
+
+			"osx": {
+				"shell_cmd": ["cd $project_path/../builds/mac/debug/LS1-Remote_debug.app/Contents/MacOS/LS1-Remote_debug"]
+			},
+			"windows": {
+				"shell_cmd": ["cd $project_path/../builds/win/debug/dLS1-Remote.exe"]
+			}
+		},
+		{
+			"name": "build release",
+			"shell_cmd": "cd $project_path; qmake -config release && make",
+
+			"osx": {
+				"shell_cmd": "cd $project_path; ./makeitmac release"
+			},
+			"windows": {
+				"shell_cmd": "cd $project_path; qmake -config release && nmake"
+			}
+		},
+		{
+			"name": "run release",
+			"shell_cmd": ["cd $project_path/../builds/unix/release/LS1-Remote"],
+
+			"osx": {
+				"shell_cmd": ["cd $project_path/../builds/mac/release/LS1-Remote.app/Contents/MacOS/LS1-Remote"]
+			},
+			"windows": {
+				"shell_cmd": ["cd $project_path/../builds/win/release/LS1-Remote.exe"]
+			}
+		}
+	]
+}
+

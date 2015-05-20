@@ -1,12 +1,33 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by file type specific settings.
 {
-    "translate_tabs_to_spaces": true,
-    "ensure_newline_at_eof_on_save": true,
-    "default_line_ending": "unix",
+    "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+	"auto_complete_on_tab": true,
     "auto_complete_commit_on_tab": true,
     "auto_complete_with_fields": true,
     "auto_complete_cycle": true,
-    "trim_trailing_white_space_on_save": true
+ 	"detect_indentation": true,
+	"font_size": 9,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+    // Columns in which to display vertical rulers
+    "rulers": [80, 120],
+    "spell_check": true,
+    "draw_minimap_border": true,
+    "always_show_minimap_viewport": true,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "default_line_ending": "unix",
+    "auto_complete_with_fields": false, // try true
+    "auto_complete_cycle": true,
+    "find_selected_text": true,
+    "move_to_limit_on_up_down": false,
+    "highlight_modified_tabs": true,
+    "show_encoding": true,
+    "show_line_endings": true,
+    "remember_full_screen": true,
 }
-
